@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trade Magnate Limited - Pictorial Gallery showcasing our projects and infrastructure.">
+    <title>Pictorial Gallery | Trade Magnate Limited</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- FontAwesome for standard UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Shared Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pictorials.html" class="active">Pictorials</a>
+                <a href="career.html">Career</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div style="display:flex; gap:15px; align-items:center;">
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Pictorials Hero -->
+        <section class="hero">
+            <div class="modern-hero">
+                <div class="hero-overlay-container">
+                    <div class="container">
+                        <div class="hero-glass-card fade-up">
+                            <span class="section-subtitle">Our Infrastructure Gallery</span>
+                            <h1 class="hero-title">Visual Showcase of<br><span class="text-primary">Enterprise Solutions</span><br>& Projects</h1>
+                            <p class="hero-desc">Explore our data centers, cabling installations, CCTV systems, and disaster recovery setups through our comprehensive pictorial gallery.</p>
+                            <div class="overlay-marquee" aria-label="Gallery highlights">
+                                <div class="marquee-lines">
+                                    <span>Data Center Infrastructure</span>
+                                    <span>Structured Cabling Systems</span>
+                                    <span>CCTV Security Networks</span>
+                                    <span>Disaster Recovery Centers</span>
+                                    <span>Cloud Integration Projects</span>
+                                    <span>Data Center Infrastructure</span>
+                                    <span>Structured Cabling Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pictorials Gallery -->
+        <section class="services-overview" style="padding: 4rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Project Gallery</span>
+                    <h2>Our Work in Pictures</h2>
+                    <p>Discover the quality and scale of our enterprise ICT implementations</p>
+                </div>
+
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Data Center Server Room" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: var(--glass-shadow);">
+                        <h3 style="margin-top: 1rem;">Data Center Infrastructure</h3>
+                        <p style="opacity: 0.8;">High-density server racks with redundant power and cooling systems.</p>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Network Cabling Installation" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: var(--glass-shadow);">
+                        <h3 style="margin-top: 1rem;">Structured Cabling</h3>
+                        <p style="opacity: 0.8;">Cat6/6A cabling installations for enterprise-grade networks.</p>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="CCTV Security System" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: var(--glass-shadow);">
+                        <h3 style="margin-top: 1rem;">CCTV Integration</h3>
+                        <p style="opacity: 0.8;">Advanced surveillance systems with AI-powered analytics.</p>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80" alt="Disaster Recovery Setup" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: var(--glass-shadow);">
+                        <h3 style="margin-top: 1rem;">Disaster Recovery</h3>
+                        <p style="opacity: 0.8;">Backup systems and failover configurations for business continuity.</p>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Cloud Infrastructure" style="width: 100%; height: 250px; object-fit: cover; border-radius: 1rem; box-shadow: var(--glass-shadow);">
+                        <h3 style="margin-top: 1rem;">Cloud Integration</h3>
+                        <p style="opacity: 0.8;">Hybrid cloud solutions connecting on-premises and cloud environments.</p>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pictorials.html">Pictorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-phone"></i> +254 706683663</p>
+                    <p><i class="fa-solid fa-envelope"></i> installations@trade-magnate.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <p>Trade Magnate Limited - Delivering robust network infrastructures and enterprise ICT solutions.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trade Magnate Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magnate.com" class="email-float" aria-label="Email Us"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" aria-label="WhatsApp Us" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <script>
+        // Wobble and zoom-out effects on mousemove for gallery items
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            let wobbleTimeout;
+            let zoomTimeout;
+            
+            item.addEventListener('mousemove', (e) => {
+                // Clear existing timeouts
+                clearTimeout(wobbleTimeout);
+                clearTimeout(zoomTimeout);
+                
+                // Remove existing classes if present
+                item.classList.remove('wobble', 'zoom-out');
+                
+                // Trigger reflow to restart animation
+                void item.offsetWidth;
+                
+                // Add wobble and zoom-out classes
+                item.classList.add('wobble', 'zoom-out');
+                
+                // Remove classes after animation completes
+                wobbleTimeout = setTimeout(() => {
+                    item.classList.remove('wobble');
+                }, 300);
+                
+                zoomTimeout = setTimeout(() => {
+                    item.classList.remove('zoom-out');
+                }, 300);
+            });
+            
+            // Reset zoom on mouse leave
+            item.addEventListener('mouseleave', () => {
+                clearTimeout(wobbleTimeout);
+                clearTimeout(zoomTimeout);
+                item.classList.remove('wobble', 'zoom-out');
+                const img = item.querySelector('img');
+                if (img) {
+                    img.style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

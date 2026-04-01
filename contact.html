@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Trade Magnate Limited. Jomo Kenyatta Avenue, Mombasa.">
+    <title>Contact | Trade Magnate Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: calc(100px + var(--spacing-xl)) 0 var(--spacing-md);
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(15, 15, 17, 1) 100%);
+            text-align: center;
+        }
+        [data-theme="light"] .page-header {
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(245, 245, 245, 1) 100%);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin: var(--spacing-xl) 0;
+        }
+
+        .contact-info {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: var(--glass-shadow);
+            border: 1px solid var(--glass-border);
+        }
+
+        .info-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(209, 31, 38, 0.1);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .info-text h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-text p {
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 0.5rem;
+            color: var(--text-color);
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pictorials.html">Pictorials</a>
+                <a href="career.html">Career</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div style="display:flex; gap:15px; align-items:center;">
+
+                <button class="mobile-menu-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-up">
+            <div class="container">
+                <div class="section-subtitle">Get In Touch</div>
+                <h1>Contact Us</h1>
+                <p style="opacity:0.8; max-width:600px; margin: 1rem auto;">Have a project in mind, need an urgent repair, or just want to learn more? Reach out to our dedicated team today.</p>
+            </div>
+        </section>
+
+        <section class="container contact-grid">
+            <div class="contact-info fade-up">
+                <h2 style="margin-bottom: 2rem;">Headquarters</h2>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-text">
+                        <h4>Our Office</h4>
+                        <p>Arzi House, Umoja Road<br>Nyali, Mombasa<br>Kenya</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text">
+                        <h4>Phone Number</h4>
+                        <p>0706683663<br>0412022457</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-text">
+                        <h4>Email</h4>
+                        <p>installations@trade-magnate.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fade-up" style="transition-delay: 100ms;">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <h2>Send a Message</h2>
+                    <p style="opacity:0.8; margin-bottom:1rem;">We usually reply within 24 business hours.</p>
+                    
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <input type="text" placeholder="Subject" required>
+                    
+                    <textarea rows="6" placeholder="Your message details..." required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom fade-up" style="border-top:none;">
+            &copy; 2026 Trade Magnate Limited. All Rights Reserved.
+        </div>
+    </footer>
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magate.com" class="email-float"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

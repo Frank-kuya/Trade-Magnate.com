@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trade Magnate Limited Comprehensive Enterprise IT Services: Fiber optic cabling, Sip Trunking, Cybersecurity, Datacenters, and Cloud Backups.">
+    <title>Enterprise IT Services | Trade Magnate Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: calc(100px + var(--spacing-xl)) 0 var(--spacing-xl);
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(15, 15, 17, 1) 100%);
+            text-align: center;
+        }
+        [data-theme="light"] .page-header {
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(245, 245, 245, 1) 100%);
+        }
+
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .service-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-img {
+            flex: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            position: relative;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .service-content {
+            flex: 1;
+        }
+
+        .service-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .service-content p {
+            opacity: 0.85;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .tech-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--card-bg);
+            padding: 0.8rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            border: 1px solid var(--glass-border);
+            font-weight: 500;
+        }
+
+        .tech-item i {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 900px) {
+            .service-row, .service-row:nth-child(even) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .tech-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="pictorials.html">Pictorials</a>
+                <a href="career.html">Career</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div style="display:flex; gap:15px; align-items:center;">
+
+                <button class="mobile-menu-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-up">
+            <div class="container">
+                <div class="section-subtitle">Enterprise Competencies</div>
+                <h1>Advanced IT Solutions</h1>
+                <p style="opacity:0.8; max-width:800px; margin: 1rem auto;">We architect, deploy, and manage highly resilient ICT infrastructures. From fiber-optic backbones to multi-cloud enterprise redundancy, we deliver uncompromising technological precision.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" alt="Data Center Cabling">
+                </div>
+                <div class="service-content">
+                    <h2>Infrastructure & Structural Cabling</h2>
+                    <p>The backbone of any modern enterprise is its physical network layer. We design and deploy high-density data center racks and comprehensive campus-wide local and wide area networks (LAN/WAN).</p>
+                    <p>Our Tier-certified engineers utilize Fluke Networks testing equipment to guarantee zero packet loss and maximum throughput across your entire topography.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Single/Multi-mode Fiber Optics</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> CAT6a / CAT7 Gigabit Ethernet</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Server Rack & Patch Panel Design</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Fluke Certification Testing</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Cloud Network and Disaster Recovery">
+                </div>
+                <div class="service-content">
+                    <h2>Onsite / Offsite Disaster Recovery</h2>
+                    <p>In the era of ransomware and hardware failures, robust data redundancy is critical. We build fully automated, immutable backup environments that adhere to the 3-2-1 backup strategy.</p>
+                    <p>We deploy high-availability Storage Area Networks (SAN) for immediate local recovery, simultaneously replicating encrypted data to secure cloud instances for offsite availability and compliance.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Veeam Backup & Replication</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> AWS S3 & Azure Blob Storage</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> RAID 5/6/10 NAS/SAN Arrays</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> AES-256 Bit Encryption at Rest</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800" alt="CCTV Command Center">
+                </div>
+                <div class="service-content">
+                    <h2>CCTV & Physical Security Integrity</h2>
+                    <p>We supply and commission intelligent surveillance architectures ranging from localized closed-circuit deployments to IP-based, multi-site command centers driven by AI analytics.</p>
+                    <p>Our solutions span thermal imaging, automatic number plate recognition (ANPR), and facial recognition, fully integrated into centralized Network Video Recorders (NVR) with massive storage pools.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> 4K/8K IP Network Cameras</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Biometric Access Control Systems</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> AI Video Analytics & Motion Detection</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Command Center Video Walls</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=800" alt="Enterprise Telephony">
+                </div>
+                <div class="service-content">
+                    <h2>Unified Communications & IP Telephony</h2>
+                    <p>Transition from legacy analog lines to highly scalable VoIP environments. We configure Enterprise PBX systems that unite global workforces through SIP trunking, slashing telecommunication costs.</p>
+                    <p>Our deployments natively integrate with your CRM platforms, enabling intelligent call routing, interactive voice response (IVR), softphones, and secure video conferencing capabilities.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> SIP Trunking & IP PBX (Asterisk/Cisco)</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Interactive Voice Response (IVR)</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> QoS Network Configuration</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> CRM / Helpdesk Integrations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Communication Tower">
+                </div>
+                <div class="service-content">
+                    <h2>Communication Mast Engineering</h2>
+                    <p>Delivering long-range connectivity requires unparalleled structural and RF engineering. We construct, maintain, and retrofit high-altitude communication masts for telecommunication providers and isolated facilities.</p>
+                    <p>We ensure strict compliance with aviation lighting regulations, lightning protection grounding, and perform deep structural integrity analysis to handle extreme environmental loads.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Galvanized Steel Tower Erection</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> RF & Microwave Antenna Alignment</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Aviation Warning Systems</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Mast Grounding & Surge Interceptors</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-row fade-up">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=800" alt="IT Hardware">
+                </div>
+                <div class="service-content">
+                    <h2>Hardware Provisioning & Support SLA</h2>
+                    <p>As tier-1 partners with the industry's leading OEM vendors, we supply the hardware backbone of your enterprise. From High-Performance Computing (HPC) servers to endpoint fleet management.</p>
+                    <p>Our Managed IT Services encompass 24/7 Network Operations Center (NOC) monitoring, automated patch management, Active Directory administration, and strict zero-trust endpoint protection.</p>
+                    <div class="tech-list">
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Enterprise Server & SAN Supply</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Managed IT Services (MSP)</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Hardware Firewalls (Fortinet/SonicWall)</div>
+                        <div class="tech-item"><i class="fa-solid fa-check"></i> Active Directory & Endpoint Security</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid fade-up">
+            <div class="footer-col">
+                <h3 style="color:#d11f26; margin-bottom:1rem; font-weight:800; font-size:1.5rem; letter-spacing:1px; text-transform:uppercase;">
+                    TRADE MAGNATE <span style="font-weight:400; font-size:1rem; letter-spacing:4px; display:block; padding-left:2px;">LIMITED</span>
+                </h3>
+                <p style="color:#aaa; max-width:300px; margin-top:1rem;">
+                    ...everywhere we engage in ICT, we create value and make a difference.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Offices</h4>
+                <p style="color:#aaa; margin-bottom:1rem;">
+                    Arzi House, Umoja Road<br>
+                    Nyali, Mombasa<br>
+                    Kenya
+                </p>
+                <p style="color:#aaa; margin-bottom:0.5rem;"><i class="fa-solid fa-envelope"></i> installations@trade-magate.com</p>
+                <p style="color:#aaa;"><i class="fa-solid fa-phone"></i> 0706683663 | 0412022457</p>
+            </div>
+        </div>
+        <div class="container footer-bottom fade-up">
+            &copy; 2026 Trade Magnate Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magate.com" class="email-float"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

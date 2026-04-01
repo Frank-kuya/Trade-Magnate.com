@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Trade Magnate Limited, a leading Enterprise ICT firm registered in 1995.">
+    <title>About Us | Trade Magnate Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: calc(100px + var(--spacing-xl)) 0 var(--spacing-xl);
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(15, 15, 17, 1) 100%);
+            text-align: center;
+        }
+        [data-theme="light"] .page-header {
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(245, 245, 245, 1) 100%);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: var(--spacing-xl) auto;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: var(--glass-border);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: var(--spacing-lg);
+            width: 100%;
+        }
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            width: 85%;
+            box-shadow: var(--glass-shadow);
+            border: 1px solid var(--glass-border);
+            position: relative;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border: 4px solid var(--bg-color);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calc(50% - 14px);
+            z-index: 1;
+        }
+        .timeline-item:nth-child(even):after {
+            right: auto;
+            left: calc(50% - 14px);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .stat-item p {
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before { left: 20px; }
+            .timeline-item, .timeline-item:nth-child(even) {
+                padding-left: 60px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+            .timeline-content { width: 100%; }
+            .timeline-item::after, .timeline-item:nth-child(even)::after {
+                left: 6px;
+                right: auto;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pictorials.html">Pictorials</a>
+                <a href="career.html">Career</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div style="display:flex; gap:15px; align-items:center;">
+
+                <button class="mobile-menu-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Page Galaxy Watermark -->
+        <div class="galaxy-watermark"></div>
+        
+        <section class="page-header fade-up">
+            <div class="container">
+                <div class="section-subtitle">Who We Are</div>
+                <h1>Engineering Excellence</h1>
+                <p style="opacity:0.8; max-width:700px; margin: 1rem auto;">We are an elite Systems Integrator and Managed Services Provider (MSP). Based in Mombasa, we deliver enterprise-grade architecture, seamless network topologies, and highly secure infrastructure.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div style="text-align:center; max-width:900px; margin:0 auto var(--spacing-xl);">
+                <h2>Pioneering the ICT Landscape</h2>
+                <p style="font-size:1.1rem; opacity:0.8; margin-top:1.5rem; line-height:1.8;">
+                    Anchored at Arzi House on Umoja Road, Nyali, Trade Magnate Limited has operated at the absolute forefront of the corporate tech stack since 1997. We treat every project with a unique approach fueled by raw technical understanding—from initial site surveys to the deployment of complex BGP routing, automated Zero-Trust protocols, and Tier-3 data center physical setups. Our success is directly tied to our stringent Service Level Agreements (SLAs) and world-class disaster recovery guarantees.
+                </p>
+
+                <div class="stats-grid fade-up">
+                    <div class="stat-item">
+                        <h3>99.9%</h3>
+                        <p>Uptime SLA Guarantee</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>25+</h3>
+                        <p>Years of Operation</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>L3</h3>
+                        <p>Certified Engineers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>NOC Monitoring</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center" style="margin-bottom:1rem;">Our Technical Evolution</h2>
+            <div class="timeline fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-primary">1995</h3>
+                        <h4>Corporate Registration</h4>
+                        <p>Trade Magnate Limited is formally incorporated, establishing our legal entity with a strong vision to dominate the local hardware provisioning and fundamental networking space.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-primary">1997</h3>
+                        <h4>Operations & Legacy Infrastructure</h4>
+                        <p>We officially begin operations in Mombasa, scaling up our focus on heavy Local Area Network (LAN) architecture and robust commercial hardware maintenance contracts across major enterprises.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-primary">2010</h3>
+                        <h4>Structural expansion & Physical Layer scaling</h4>
+                        <p>Significantly expanded our physical networking layer divisions to include the rigorous construction of microwave communication masts, complex structured Cat6a and fiber optics roll-outs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-primary">Today</h3>
+                        <h4>Enterprise Cloud & Cybersecurity Era</h4>
+                        <p>Transitioned fully into a comprehensive MSP providing deep-packet inspection firewalls, AI-driven CCTV surveillance, multi-site Azure/AWS cloud-redundant backups, and seamless IP Telephony unified communications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer>
+        <div class="container footer-grid fade-up">
+            <div class="footer-col">
+                <h3 style="color:#d11f26; margin-bottom:1rem; font-weight:800; font-size:1.5rem; letter-spacing:1px; text-transform:uppercase;">
+                    TRADE MAGNATE <span style="font-weight:400; font-size:1rem; letter-spacing:4px; display:block; padding-left:2px;">LIMITED</span>
+                </h3>
+                <p style="color:#aaa; max-width:300px; margin-top:1rem;">
+                    ...everywhere we engage in ICT, we create value and make a difference.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Offices</h4>
+                <p style="color:#aaa; margin-bottom:1rem;">
+                    Arzi House, Umoja Road<br>
+                    Nyali, Mombasa<br>
+                    Kenya
+                </p>
+                <p style="color:#aaa; margin-bottom:0.5rem;"><i class="fa-solid fa-envelope"></i> installations@trade-magate.com</p>
+                <p style="color:#aaa;"><i class="fa-solid fa-phone"></i> 0706683663 | 0412022457</p>
+            </div>
+        </div>
+        <div class="container footer-bottom fade-up">
+            &copy; 2026 Trade Magnate Limited. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magate.com" class="email-float"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

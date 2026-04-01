@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trade Magnate Limited - High-End Enterprise ICT Solutions, Data Center Cabling, Disaster Recovery, and CCTV integrations.">
+    <title>Enterprise IT Architecture | Trade Magnate Limited</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- FontAwesome for standard UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        .tech-stack-banner {
+            background-color: #000;
+            padding: 2rem 0;
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+            text-align: center;
+        }
+        
+        [data-theme="light"] .tech-stack-banner {
+            background-color: #f1f1f1;
+        }
+
+        .tech-stack-marquee {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            animation: marqueeScroll 25s linear infinite;
+            gap: 5rem;
+            padding: 0 2rem;
+            width: max-content;
+            align-items: center;
+        }
+        @keyframes marqueeScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-50% - 2.5rem)); }
+        }
+
+        .marquee-content i {
+            font-size: 3rem;
+            opacity: 1; /* Bright default */
+            transition: var(--transition);
+            border-radius: 50%; /* required for rounded ripple */
+            display: inline-flex;
+        }
+
+        .marquee-content i:hover {
+            transform: scale(1.15);
+            animation: waterRipple 1.2s infinite ease-out;
+        }
+
+        @keyframes waterRipple {
+            0% { box-shadow: 0 0 0 0 currentColor; }
+            100% { box-shadow: 0 0 0 25px transparent; }
+        }
+
+        .hero-desc {
+            max-width: 700px;
+        }
+
+        /* Extreme Water Ripple Footer */
+        .extreme-footer {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            padding: 3rem 1rem !important;
+            text-align: center;
+            font-weight: 800;
+            color: var(--text-color);
+            border-top: 1px solid rgba(209,31,38,0.2) !important;
+        }
+
+        /* Background Intense Expanding Ripples */
+        .extreme-footer::before, .extreme-footer::after, .extreme-footer .ripple-core {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 4px solid rgba(209, 31, 38, 0.4);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0; /* Hidden by default */
+        }
+
+        /* Activate on Mouse Move (Hover) */
+        .extreme-footer:hover::before, 
+        .extreme-footer:hover::after, 
+        .extreme-footer:hover .ripple-core {
+            animation: tsunamiBackground 3s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
+        }
+
+        .extreme-footer:hover::after { animation-delay: 1s; }
+        .extreme-footer:hover .ripple-core { animation-delay: 2s; border-color: rgba(0,0,0,0.1); }
+
+        @keyframes tsunamiBackground {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0.8;
+                border-width: 20px;
+            }
+            100% {
+                width: 250vw;
+                height: 250vw;
+                opacity: 0;
+                border-width: 1px;
+            }
+        }
+
+        /* Wording Ripple/Wave */
+        .extreme-footer span.ripple-text {
+            display: inline-block;
+            background: linear-gradient(90deg, #111, #d11f26, #111);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: 0 2px 5px rgba(209, 31, 38, 0.1); /* Reduced shadow Base */
+            transition: all 0.3s ease;
+        }
+
+        /* Activate Wording Ripple on Mouse Move */
+        .extreme-footer:hover span.ripple-text {
+            animation: textTsunami 2.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes textTsunami {
+            0% {
+                background-position: 0% center;
+                transform: scale(1) translateY(0) rotate(0deg);
+                filter: drop-shadow(0 1px 1px rgba(209,31,38,0.1));
+            }
+            100% {
+                background-position: 200% center;
+                transform: scale(1.04) translateY(-2px) rotate(0.2deg);
+                filter: drop-shadow(0 5px 5px rgba(209,31,38,0.2)); /* Reduced shadow Peak */
+                letter-spacing: 1px; /* reduced layout shift */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pictorials.html">Pictorials</a>
+                <a href="career.html">Career</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div style="display:flex; gap:15px; align-items:center;">
+
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Coastal Watermark on Home -->
+        <div class="coastal-watermark"></div>
+
+        <!-- Modern High-End Hero Section -->
+        <section class="modern-hero">
+            <!-- Background Swiper (Auto-rotates bright tech images) -->
+            <div class="hero-swiper swiper" id="homeHero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(248, 249, 252, 0.8), rgba(248, 249, 252, 0.95)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000');"></div>
+                    <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(248, 249, 252, 0.8), rgba(248, 249, 252, 0.95)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000');"></div>
+                    <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(248, 249, 252, 0.8), rgba(248, 249, 252, 0.95)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000');"></div>
+                </div>
+            </div>
+
+            <!-- Foreground Floating Glass Overlay -->
+            <div class="hero-overlay-container">
+
+                <div class="container">
+                    <div class="hero-glass-card fade-up">
+                        <span class="section-subtitle">...everything Enterprise ICT</span>
+                        <h1 class="hero-title">Delivering Robust<br><span class="text-primary">Network Infrastructures</span><br>& Security</h1>
+                        <p class="hero-desc" style="font-size: 1.1rem; opacity: 0.8; margin-bottom: 2.5rem; max-width: 650px;">We engineer high-availability topologies. Fluke-certified structural cabling, cloud redundancies, and enterprise data centers for zero-latency operations.</p>
+                        <div class="hero-buttons">
+                            <a href="services.html" class="btn btn-primary">Review IT Solutions <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="contact.html" class="btn btn-outline" style="background-color: #fff;">Request Consultation</a>
+                        </div>
+                        <div class="overlay-marquee" aria-label="Live network highlights">
+                            <div class="marquee-lines">
+                                <span>Water Tripple Redundancy</span>
+                                <span>100% LAN/WAN Synchronized</span>
+                                <span>Zero Packet Loss</span>
+                                <span>Rapid RTO & RPO</span>
+                                <span>Water Tripple Redundancy</span>
+                                <span>100% LAN/WAN Synchronized</span>
+                            </div>
+                        </div>
+                        <div class="triplet-ripple" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+      
+
+            <!-- Standard Modern Navigation Elements -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next" style="color:var(--primary-color);"></div>
+            <div class="swiper-button-prev" style="color:var(--primary-color);"></div>
+        </section>
+
+        <!-- Features Banner -->
+        <div class="features-banner fade-up">
+            <div class="feature-pill">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h5>24/7 Support</h5>
+                    <p>Always online NOC</p>
+                </div>
+            </div>
+            <div class="feature-pill">
+                <i class="fa-solid fa-user-shield"></i>
+                <div>
+                    <h5>Certified Experts</h5>
+                    <p>L3-Engineering Team</p>
+                </div>
+            </div>
+            <div class="feature-pill">
+                <i class="fa-solid fa-server"></i>
+                <div>
+                    <h5>99.9% Uptime</h5>
+                    <p>Guaranteed SLA</p>
+                </div>
+            </div>
+            <div class="feature-pill">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                    <h5>Custom Architecture</h5>
+                    <p>Tailored topologies</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack Banner -->
+        <div class="tech-stack-banner fade-up" style="overflow: hidden;">
+            <div class="container-fluid">
+                <p style="font-size: 0.85rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:1.5rem; opacity:0.7; text-align:center;">Trusted deployment partners for leading infrastructure providers</p>
+                
+                <div class="tech-stack-marquee">
+                    <div class="tech-stack-logos marquee-content">
+                        <!-- Group 1 -->
+                        <i class="fa-brands fa-microsoft" title="Microsoft Azure & Server" style="color: #00a4ef;"></i>
+                        <i class="fa-brands fa-aws" title="Amazon Web Services" style="color: #FF9900;"></i>
+                        <i class="fa-brands fa-linux" title="Linux Enterprise" style="color: #FCC624;"></i>
+                        <i class="fa-solid fa-network-wired" title="Cisco / Networking" style="color: #049fd9;"></i>
+                        <i class="fa-solid fa-shield-halved" title="Fortinet / Cybersecurity" style="color: #c81326;"></i>
+                        <i class="fa-solid fa-server" title="Dell / Enterprise Servers" style="color: #007db8;"></i>
+                        
+                        <!-- Group 2 (Duplicate for Seamless Loop) -->
+                        <i class="fa-brands fa-microsoft" title="Microsoft Azure & Server" style="color: #00a4ef;"></i>
+                        <i class="fa-brands fa-aws" title="Amazon Web Services" style="color: #FF9900;"></i>
+                        <i class="fa-brands fa-linux" title="Linux Enterprise" style="color: #FCC624;"></i>
+                        <i class="fa-solid fa-network-wired" title="Cisco / Networking" style="color: #049fd9;"></i>
+                        <i class="fa-solid fa-shield-halved" title="Fortinet / Cybersecurity" style="color: #c81326;"></i>
+                        <i class="fa-solid fa-server" title="Dell / Enterprise Servers" style="color: #007db8;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Step Process Section -->
+        <section class="section">
+            <div class="container fade-up">
+                <div class="section-header">
+                    <div class="section-subtitle">Methodology</div>
+                    <h2>Our Simple 4 Step Process</h2>
+                    <p style="opacity:0.7; max-width:700px; margin: 1rem auto;">We transform and secure your enterprise IT physical infrastructure in 4 proven steps.</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Site Survey</h4>
+                        <p style="opacity:0.8; font-size: 0.9rem; margin-top: 0.5rem;">Our team analyzes your physical premises and existing topology.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Architecture Design</h4>
+                        <p style="opacity:0.8; font-size: 0.9rem; margin-top: 0.5rem;">Custom blueprint tailored to your physical security needs.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Deployment</h4>
+                        <p style="opacity:0.8; font-size: 0.9rem; margin-top: 0.5rem;">L3-engineers install and configure network hardware.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>NOC Handover</h4>
+                        <p style="opacity:0.8; font-size: 0.9rem; margin-top: 0.5rem;">Continuous maintenance, speed testing, and active support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Stats (Count-up) Section -->
+        <section class="section stats-section">
+            <div class="container">
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h2 class="stat-number" data-target="1500">0</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-project-diagram"></i>
+                        <h2 class="stat-number" data-target="1000">0</h2>
+                        <p>Projects Accomplished</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-server"></i>
+                        <h2 class="stat-number" data-target="200">0</h2>
+                        <p>Nodes Deployed</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-award"></i>
+                        <h2 class="stat-number" data-target="20">0</h2>
+                        <p>Industry Awards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filterable Portfolio Gallery -->
+        <section class="section">
+            <div class="container fade-up">
+                <div class="section-header">
+                    <div class="section-subtitle">Our Projects</div>
+                    <h2>Accomplished Deployments</h2>
+                </div>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="network">Networking</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & Voice</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <div class="portfolio-item" data-category="network">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80" alt="Fiber Deployment"></div>
+                        <div class="portfolio-caption">
+                            <h4>County Assembly of Kwale LAN</h4>
+                            <p>Fluke-certified CAT6a Structural Cabling</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="security">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80" alt="CCTV Setup"></div>
+                        <div class="portfolio-caption">
+                            <h4>Masss Energy</h4>
+                            <p>IP-CCTV NVR Architecture</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="network">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80" alt="Server Room"></div>
+                        <div class="portfolio-caption">
+                            <h4>Fujita Corporation</h4>
+                            <p>L3 Switch Integrations</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="cloud">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="Telecom"></div>
+                        <div class="portfolio-caption">
+                            <h4>United (EA) Warehouses LTD</h4>
+                            <p>VoIP unified communications</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="security">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80" alt="Access Control"></div>
+                        <div class="portfolio-caption">
+                            <h4>Base Titanium</h4>
+                            <p>Zero-Trust Security Perimeter</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="cloud">
+                        <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Cloud Network"></div>
+                        <div class="portfolio-caption">
+                            <h4>Immutable Backup</h4>
+                            <p>Off-site disaster recovery node</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="section services-overview">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <div class="section-subtitle">Core IT Operations</div>
+                    <h2>Enterprise Integration Expertise</h2>
+                    <p style="opacity:0.7; max-width:700px; margin: 1rem auto;">Acting as your dedicated Managed Services Provider (MSP), we oversee every physical and logical layer of your modern tech stack.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- CCTV Card -->
+                    <div class="service-card fade-up">
+                        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3>Perimeter & Data Security</h3>
+                        <p>Deploying end-to-end NVR storage configurations, IP surveillance networks, and advanced biometric zero-trust access controls across physical environments.</p>
+                        <a href="services.html" class="learn-more">View specifications <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <!-- Networking Card -->
+                    <div class="service-card fade-up" style="transition-delay: 100ms;">
+                        <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Structural Cabling & SAN</h3>
+                        <p>Providing pristine Fluke-certified CAT6/CAT7 and Fiber optic data center deployments to ensure maximum LAN/WAN throughput and zero latency.</p>
+                        <a href="services.html" class="learn-more">View specifications <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <!-- Communication Card -->
+                    <div class="service-card fade-up" style="transition-delay: 200ms;">
+                        <div class="service-icon"><i class="fa-solid fa-tower-cell"></i></div>
+                        <h3>Long-Range Communication</h3>
+                        <p>Galvanized mast construction, high-frequency microwave link installations, and intensive mechanical SLA maintenance for telecommunication grids.</p>
+                        <a href="services.html" class="learn-more">View specifications <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <!-- IP Phone Card -->
+                    <div class="service-card fade-up" style="transition-delay: 300ms;">
+                        <div class="service-icon"><i class="fa-solid fa-phone"></i></div>
+                        <h3>VoIP & IP Telephony</h3>
+                        <p>Full implementation of SIP trunks, Asterisk PBX solutions, and scalable Unified Communication hardware to reduce enterprise contact center costs.</p>
+                        <a href="services.html" class="learn-more">View specifications <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Snippet Section -->
+        <section class="section">
+            <div class="container about-snippet fade-up">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200" alt="Trade Magnate Office Server Room">
+                </div>
+                <div class="about-content">
+                    <div class="section-subtitle">Systems Integration History</div>
+                    <h2>A dynamic, unyielding approach to scaling networks</h2>
+                    <p>Operating since 1997, Trade Magnate Limited has fundamentally shaped regional ICT architecture. Our legacy is built on deploying cutting-edge hardware matrices and establishing untouchable service and repair backup channels for elite corporate clientele.</p>
+                    <p>We combine highly certified L3-Engineers with tier-1 OEM relationships to guarantee your IT workflow runs at 99.9% physical uptime, consistently outpacing modern business demands.</p>
+                    <a href="about.html" class="btn btn-outline" style="margin-top:1rem;">Read our engineering history</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container fade-up">
+            <div class="cta-section">
+                <h2>Require an immediate network audit?</h2>
+                <p style="opacity:0.9; margin-bottom:2rem;">Contact our specialized IT deployment team to analyze your infrastructure vulnerabilities, plan cloud migrations, or secure your physical perimeter.</p>
+                <a href="contact.html" class="btn">Initiate secure contact <i class="fa-solid fa-lock" style="margin-left: 5px;"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Shared Footer -->
+    <footer>
+        <div class="container footer-grid fade-up">
+            <div class="footer-col">
+                <h3 style="color:#d11f26; margin-bottom:1rem; font-weight:800; font-size:1.5rem; letter-spacing:1px; text-transform:uppercase;">
+                    TRADE MAGNATE <span style="font-weight:400; font-size:1rem; letter-spacing:4px; display:block; padding-left:2px;">LIMITED</span>
+                </h3>
+                <p style="color:#aaa; max-width:300px; margin-top:1rem;">
+                    ...everywhere we engage in ICT, we create value and make a difference through undeniable reliability.
+                </p>
+                <div style="margin-top:2rem; display:flex; gap:15px; font-size:1.5rem;">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#aaa;"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" style="color:#aaa;"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook" style="color:#aaa;"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Architecture Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">System Overview</a></li>
+                    <li><a href="about.html">Firm Legacy</a></li>
+                    <li><a href="services.html">Deployed Solutions</a></li>
+                    <li><a href="career.html">Engineering Careers</a></li>
+                    <li><a href="contact.html">NOC Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Headquarters</h4>
+                <p style="color:#aaa; margin-bottom:1rem;">
+                    Azir House, Umoja Road<br>
+                    Nyali, Mombasa<br>
+                    Kenya
+                </p>
+                <p style="color:#aaa; margin-bottom:0.5rem;"><i class="fa-solid fa-envelope"></i> installations@trade-magate.com</p>
+                <p style="color:#aaa;"><i class="fa-solid fa-phone"></i> 0706683663 | 0412022457</p>
+            </div>
+        </div>
+        <div class="container footer-bottom extreme-footer fade-up">
+            <div class="ripple-core"></div>
+            <span class="ripple-text">&copy; 2026 Trade Magnate Limited. All Rights Reserved. Fully Encrypted Endpoint.</span>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Actions -->
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magate.com" class="email-float" aria-label="Email Us"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" aria-label="WhatsApp Us" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

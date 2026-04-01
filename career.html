@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Trade Magnate Limited. Career opportunities for CCNA Engineers, Cybersecurity specialists, and Telecom technicians.">
+    <title>Career | Trade Magnate Limited</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: calc(100px + var(--spacing-xl)) 0 var(--spacing-md);
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(15, 15, 17, 1) 100%);
+            text-align: center;
+        }
+        [data-theme="light"] .page-header {
+            background: linear-gradient(135deg, rgba(209, 31, 38, 0.05) 0%, rgba(245, 245, 245, 1) 100%);
+        }
+
+        .job-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition);
+        }
+
+        .job-card:hover {
+            border-color: var(--primary-color);
+            transform: scale(1.02);
+        }
+
+        .job-card h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin: 0.5rem 0 1.5rem;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+        }
+
+        .req-list {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .req-list li {
+            margin-bottom: 0.5rem;
+            opacity: 0.85;
+            list-style-type: square;
+        }
+
+        .apply-btn {
+            margin-top: 1rem;
+        }
+
+        .application-form {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: var(--glass-shadow);
+            margin-top: var(--spacing-xl);
+            border: 1px solid var(--glass-border);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, 
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: var(--bg-color);
+            border: 1px solid var(--glass-border);
+            border-radius: 0.5rem;
+            color: var(--text-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L70 30 L50 60 L30 30 Z" fill="#d11f26"/>
+                    <path d="M20 30 L30 40 L20 55 L10 40 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M80 15 L90 25 L80 40 L70 25 Z" fill="#d11f26" opacity="0.8"/>
+                    <path d="M50 95 L70 70 L50 40 L30 70 Z" fill="#2a2a2a" class="dark-diamond"/>
+                </svg>
+                <div class="logo-text">
+                    TRADE MAGNATE
+                    <span class="sub">L I M I T E D</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pictorials.html">Pictorials</a>
+                <a href="career.html" class="active">Career</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div style="display:flex; gap:15px; align-items:center;">
+
+                <button class="mobile-menu-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-up">
+            <div class="container">
+                <div class="section-subtitle">Scale With Us</div>
+                <h1>Engineering & Technical Roles</h1>
+                <p style="opacity:0.8; max-width:600px; margin: 1rem auto;">Are you passionate about enterprise networking, hardware provisioning, or cybersecurity? We are always looking for certified talent to expand our multi-disciplinary response teams.</p>
+            </div>
+        </section>
+
+        <section class="section container" style="max-width: 900px;">
+            <div class="fade-up">
+                <h2 style="margin-bottom: 2rem;">Current Openings</h2>
+                
+                <div class="job-card">
+                    <h3>Senior (L3) Network Infrastructure Engineer</h3>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Mombasa, Kenya</span>
+                        <span><i class="fa-solid fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fa-solid fa-clock"></i> Posted 2 days ago</span>
+                    </div>
+                    <p>We are seeking a highly specialized Network Engineer to architect multi-site Data Center connections and manage our vast BGP/OSPF enterprise topologies.</p>
+                    <ul class="req-list">
+                        <li><strong>Certifications desired:</strong> Active CCNA / CCNP or equivalent Juniper standard.</li>
+                        <li><strong>Experience:</strong> 4+ years in heavy CAT6a / Fiber optic splicing and Fluke testing.</li>
+                        <li><strong>Duties:</strong> Designing high-availability corporate networks, configuring Cisco ASA/Fortinet firewalls, and establishing complex VPN tunnels.</li>
+                    </ul>
+                    <a href="#apply" class="btn btn-outline apply-btn">Apply For L3 Engineer</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>System Integrator & IP CCTV Specialist</h3>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Mombasa, Kenya</span>
+                        <span><i class="fa-solid fa-briefcase"></i> Full-Time</span>
+                        <span><i class="fa-solid fa-clock"></i> Posted 1 week ago</span>
+                    </div>
+                    <p>Join our rapid-response physical security team. You will be actively deploying AI-backed perimeter surveillance and commercial IP Telephony PBX environments across enterprise clients.</p>
+                    <ul class="req-list">
+                        <li><strong>Technical Knowledge:</strong> Deep understanding of TCP/IP fundamentals, PoE+ switching, and SAN/NVR high-capacity storage configurations.</li>
+                        <li><strong>Hardware Familiarity:</strong> Dahua, Hikvision, Ubiquiti, Asterisk/3CX PBX servers, and Biometric integrations.</li>
+                        <li><strong>Duties:</strong> Termination of CAT6 cables, mounting HD IP cameras, and programming local switch topologies.</li>
+                    </ul>
+                    <a href="#apply" class="btn btn-outline apply-btn">Apply For System Integrator</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>Cloud Infrastructure & Backup Administrator</h3>
+                    <div class="job-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Hybrid / Remote</span>
+                        <span><i class="fa-solid fa-briefcase"></i> Contract</span>
+                        <span><i class="fa-solid fa-clock"></i> Posted 3 days ago</span>
+                    </div>
+                    <p>Take charge of maintaining and monitoring our comprehensive suite of off-site Disaster Recovery solutions and ensuring constant compliance with our 3-2-1 backup policies.</p>
+                    <ul class="req-list">
+                        <li><strong>Certifications desired:</strong> AWS Certified SysOps Administrator or Azure Administrator (AZ-104).</li>
+                        <li><strong>Familiarity:</strong> Veeam Backup & Replication, Datto, VMware vSphere, and Hyper-V clustering.</li>
+                    </ul>
+                    <a href="#apply" class="btn btn-outline apply-btn">Apply For Cloud Admin</a>
+                </div>
+            </div>
+
+            <div id="apply" class="application-form fade-up">
+                <h2 style="margin-bottom: 2rem;">Secure Application Portal</h2>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Application & Credentials Handshake complete. We will review your artifacts shortly.');">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" required placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" required placeholder="Doe">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="johndoe@certified-engineer.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Technical Domain</label>
+                        <select id="role">
+                            <option value="networking">Routing & Switching (Engineering)</option>
+                            <option value="security">Cybersecurity & IP CCTV</option>
+                            <option value="telephony">VoIP & PBX Telephony</option>
+                            <option value="cloud">Cloud Architecture & Backups</option>
+                            <option value="support">Tier-1 Helpdesk / NOC</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cover">Experience Matrix / Cover Letter</label>
+                        <textarea id="cover" rows="5" placeholder="List your active certs, primary hypervisors utilized, firewall models configured, etc."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resume">Upload Resume / CV (PDF encrypted or standard)</label>
+                        <input type="file" id="resume" accept="application/pdf" style="padding: 0.75rem;">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Initialize Submission Instance</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom fade-up" style="border-top:none;">
+            &copy; 2026 Trade Magnate Limited. All Rights Reserved.
+        </div>
+    </footer>
+    <div class="floating-actions">
+        <a href="mailto:installations@trade-magate.com" class="email-float"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/254706683663" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
